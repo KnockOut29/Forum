@@ -41,7 +41,7 @@ if($result){
  
     <!--Lisää keskustelu aihe-->
     <div class="wrapper">
-       <form action="" method="POST" class="form">
+       <form action="#" method="POST" class="form">
     <div class="row">
         <div class="input-group">
             <label for="name">Name</label>
@@ -61,7 +61,7 @@ if($result){
        <div class="prev-comments">
         <?php
 
-            $sql = "SELECT * FROM topic";
+            $sql = "SELECT * FROM comment";
             $result = mysqli_query($conn, $sql);
             if (mysqli_num_rows($result) > 0){
                 while ($row = mysqli_fetch_assoc($result));
@@ -76,7 +76,7 @@ if($result){
         <?php
 
         ?>
-        
+
         </div>
     </div>
 
